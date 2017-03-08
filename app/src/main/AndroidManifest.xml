@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firstapp.in.blindapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ThirdEyeBlind"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".callScreen" />
+        <activity android:name=".Call_sub" />
+        <activity android:name=".ContactsScreen" />
+        <activity android:name=".Delete_log_sub" />
+        <activity android:name=".Makecall_sub" />
+        <activity android:name=".MessageScreen" />
+        <activity android:name=".MusicScreen" />
+        <activity android:name=".AlarmScreen" />
+        <activity android:name=".inbox_sub" />
+        <activity android:name=".Sent_sub" />
+        <activity android:name=".Compose_sub" />
+        <activity android:name=".Contacts_sub" />
+        <activity android:name=".Create_contacts_sub"></activity>
+    </application>
+
+</manifest>
