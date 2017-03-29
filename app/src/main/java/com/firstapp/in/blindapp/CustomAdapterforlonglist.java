@@ -1,40 +1,35 @@
 package com.firstapp.in.blindapp;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
-
 
 /**
- * Created by Rina on 02-02-2017.
+ * Created by Rina on 29-03-2017.
  */
-
-public class CustomAdapter extends BaseAdapter {
+public class CustomAdapterforlonglist extends BaseAdapter {
     ArrayList<GridModel> arrayList;
-   // Integer[] image;
+    // Integer[] image;
     //String[] names;
     Context gContext;
 
     private static LayoutInflater inflater ;
 
-    public CustomAdapter(Context gContext, ArrayList<GridModel> arrayList) {
+    public CustomAdapterforlonglist(Context gContext, ArrayList<GridModel> arrayList) {
 //        names = pnames;
 //        image = pimage;
         //gContext =;
         this.gContext=gContext;
-       // this.gContext=Mainactivity;
+        // this.gContext=Mainactivity;
         this.arrayList=arrayList;
 //        inflater = (LayoutInflater) gContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -67,9 +62,9 @@ public class CustomAdapter extends BaseAdapter {
         if(convertView == null){
             holder = new Holder();
             inflater = (LayoutInflater)gContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = inflater.inflate(R.layout.activity_app_main,parent,false);
-            holder.tv = (TextView) convertView.findViewById(R.id.text);
-            holder.img = (ImageView) convertView.findViewById(R.id.image);
+            convertView = inflater.inflate(R.layout.long_list,parent,false);
+            holder.tv = (TextView) convertView.findViewById(R.id.textlong);
+            holder.img = (ImageView) convertView.findViewById(R.id.imagelong);
             convertView.setTag(holder);
         }else{
             holder = (Holder) convertView.getTag();
@@ -88,3 +83,4 @@ public class CustomAdapter extends BaseAdapter {
     }
 
 }
+

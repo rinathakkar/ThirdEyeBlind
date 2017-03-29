@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import java.util.ArrayList;
+
 public class Sent_sub extends AppCompatActivity {
 
     public Integer[] SASimage = {R.drawable.sentmsg, R.drawable.deletemsg,R.drawable.deletemsg,R.drawable.backicon};
@@ -17,10 +19,17 @@ public class Sent_sub extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.single_grid_main);
+        ArrayList<GridModel> arrayList = new ArrayList<>();
+        for (int i = 0; i <SASnames.length ; i++) {
+            GridModel gg =new GridModel();
+            gg.setName(SASnames[i]);
+            gg.setPath(SASimage[i]);
+            arrayList.add(gg);
+        }
 
         GridView gridviewSAM = (GridView) findViewById(R.id.main_call);
-        gridviewSAM.setAdapter(new CustomAdapter(this, SASimage, SASnames));
+        gridviewSAM.setAdapter(new CustomAdapter(this, arrayList));
         gridviewSAM.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

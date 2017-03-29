@@ -27,7 +27,9 @@
         <activity android:name=".Sent_sub" />
         <activity android:name=".Compose_sub" />
         <activity android:name=".Contacts_sub" />
-        <activity android:name=".Create_contacts_sub"></activity>
+        <activity android:name=".Create_contacts_sub" />
+        <activity android:name=".Alarmlist_sub" />
+        <activity android:name=".Create_alarm_sub"></activity>
     </application>
 
 </manifest>

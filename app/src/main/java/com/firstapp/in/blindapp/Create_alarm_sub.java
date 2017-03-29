@@ -8,32 +8,29 @@ import android.widget.GridView;
 
 import java.util.ArrayList;
 
-public class MusicScreen extends AppCompatActivity {
+public class Create_alarm_sub extends AppCompatActivity {
 
-    public Integer[] miimage = {R.drawable.play,R.drawable.volume,R.drawable.artist,R.drawable.backicon};
-    public String[] minames = {"Play","Volume","Artists","Go to back"};
+    public Integer[] Acimage = {R.drawable.calender,R.drawable.createalarm,R.drawable.createalarm,R.drawable.createalarm,R.drawable.backicon};
+    public String[] Acnames = {"Day alarm:Friday","Alarm hours:00","Alarm minutes:00","Create alarm","Go to back"};
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.single_grid_main);
-
         ArrayList<GridModel> arrayList = new ArrayList<>();
-        for (int i = 0; i <minames.length ; i++) {
+        for (int i = 0; i <Acnames.length ; i++) {
             GridModel gg =new GridModel();
-            gg.setName(minames[i]);
-            gg.setPath(miimage[i]);
+            gg.setName(Acnames[i]);
+            gg.setPath(Acimage[i]);
             arrayList.add(gg);
         }
+        GridView gridview4 = (GridView) findViewById(R.id.main_call);
+        gridview4.setAdapter(new CustomAdapter(this, arrayList));
 
-        GridView gridview3 = (GridView) findViewById(R.id.main_call);
-        gridview3.setAdapter(new CustomAdapter(this,arrayList));
-
-        gridview3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        gridview4.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
 
             }
         });
