@@ -236,7 +236,7 @@ public class callScreen extends AppCompatActivity implements GestureDetector.OnG
                 if (speakeEnable) {
                     speakOut("Open call logs");
                 }
-                Intent intent = new Intent(callScreen.this,Call_sub.class);
+                Intent intent = new Intent(callScreen.this,Call_logs.class);
                 intent.putExtra("selectedPosition", selectedPosition);
                 startActivity(intent);
                // Toast.makeText(this, "call logs ", Toast.LENGTH_SHORT).show();

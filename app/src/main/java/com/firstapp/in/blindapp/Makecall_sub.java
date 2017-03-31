@@ -215,6 +215,12 @@ public class Makecall_sub extends AppCompatActivity implements GestureDetector.O
     }
 
     private void onRightSwipe() {switch (selectedPosition) {
+        case 0:
+            Intent intent1 = new Intent(Makecall_sub.this,InputKeyboardTalkback.class);
+            intent1.putExtra("selectedPosition", selectedPosition);
+            startActivity(intent1);
+            break;
+
         case 2:
             if (speakeEnable) {
                 speakOut("Go to back");
@@ -225,7 +231,6 @@ public class Makecall_sub extends AppCompatActivity implements GestureDetector.O
 //                Toast.makeText(this, "Alarm", Toast.LENGTH_SHORT).show();
             break;
     }
-
     }
 
     private void onLeftSwipe() {

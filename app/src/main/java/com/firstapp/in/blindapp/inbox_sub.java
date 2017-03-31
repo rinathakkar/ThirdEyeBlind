@@ -267,13 +267,10 @@ public class inbox_sub extends AppCompatActivity implements GestureDetector.OnGe
                 Intent intent4 = new Intent(inbox_sub.this,MessageScreen.class);
                 intent4.putExtra("selectedPosition", selectedPosition);
                 startActivity(intent4);
-//                Toast.makeText(this, "Alarm", Toast.LENGTH_SHORT).show();
                 break;
         }
 
     }
-
     private void onLeftSwipe() {
-
     }
 }

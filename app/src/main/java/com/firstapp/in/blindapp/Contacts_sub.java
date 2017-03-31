@@ -159,10 +159,12 @@ public class Contacts_sub extends AppCompatActivity implements GestureDetector.O
                     if (speakeEnable){
                         speakOut("Send a message");
                     }
+                    break;
                 case 3:
                     if (speakeEnable){
                         speakOut("Delete contacts");
                     }
+                    break;
                 case 4:
                     if (speakeEnable) {
                         speakOut("Go to back");
@@ -179,7 +181,6 @@ public class Contacts_sub extends AppCompatActivity implements GestureDetector.O
         }else{
             Log.d("myapp","increment complete");
         }
-
     }
 
     private void speakOut(String contacts_sub) {
@@ -212,10 +213,12 @@ public class Contacts_sub extends AppCompatActivity implements GestureDetector.O
                     if (speakeEnable){
                         speakOut("Send a message");
                     }
+                    break;
                 case 3:
                     if (speakeEnable){
                         speakOut("Delete contacts");
                     }
+                    break;
                 case 4:
                     if (speakeEnable) {
                         speakOut("Go to back");
@@ -230,7 +233,6 @@ public class Contacts_sub extends AppCompatActivity implements GestureDetector.O
         }else{
             Log.d("myapp","decreament complete");
         }
-
     }
 
     private void onRightSwipe() {
@@ -245,7 +247,6 @@ public class Contacts_sub extends AppCompatActivity implements GestureDetector.O
 //                Toast.makeText(this, "Alarm", Toast.LENGTH_SHORT).show();
                 break;
         }
-
     }
 
     private void onLeftSwipe() {

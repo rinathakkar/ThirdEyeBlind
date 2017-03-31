@@ -171,7 +171,6 @@ public class ContactsScreen extends AppCompatActivity implements GestureDetector
             }else{
                 Log.d("myapp","increment complete");
             }
-
     }
 
     private void speakOut(String message3) {

@@ -16,7 +16,7 @@ import android.widget.GridView;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class Call_sub extends AppCompatActivity implements GestureDetector.OnGestureListener,TextToSpeech.OnInitListener {
+public class Call_logs extends AppCompatActivity implements GestureDetector.OnGestureListener,TextToSpeech.OnInitListener {
     private static final int SWAIPE_MIN_DISTANCE = 150;
     private static final int SWAIPE_MAX_OFF_PATH = 300;
     private static final int SWIPE_THRESHOLD_VELOCITY = 250;
@@ -242,7 +242,7 @@ public class Call_sub extends AppCompatActivity implements GestureDetector.OnGes
                 if (speakeEnable) {
                     speakOut("Go to back");
                 }
-                Intent intent4 = new Intent(Call_sub.this, callScreen.class);
+                Intent intent4 = new Intent(Call_logs.this, callScreen.class);
                 intent4.putExtra("selectedPosition", selectedPosition);
                 startActivity(intent4);
 //                Toast.makeText(this, "Alarm", Toast.LENGTH_SHORT).show();

@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".callScreen" />
-        <activity android:name=".Call_sub" />
+        <activity android:name=".Call_logs" />
         <activity android:name=".ContactsScreen" />
         <activity android:name=".Delete_log_sub" />
         <activity android:name=".Makecall_sub" />
@@ -29,7 +29,8 @@
         <activity android:name=".Contacts_sub" />
         <activity android:name=".Create_contacts_sub" />
         <activity android:name=".Alarmlist_sub" />
-        <activity android:name=".Create_alarm_sub"></activity>
+        <activity android:name=".Create_alarm_sub" />
+        <activity android:name=".InputKeyboardTalkback" />
     </application>
 
 </manifest>
